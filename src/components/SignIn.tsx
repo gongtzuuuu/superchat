@@ -1,5 +1,5 @@
 import Cookies from 'universal-cookie';
-import { signInWithPopup, signInWithRedirect } from 'firebase/auth';
+import { signInWithPopup } from 'firebase/auth';
 import { auth, provider } from '../config/firebase';
 import { Button } from './ui/button';
 

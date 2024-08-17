@@ -1,30 +1,17 @@
-# React + TypeScript + Vite
+## Superchat
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![website screenshot](/public/preview.jpg)
 
-Currently, two official plugins are available:
+Superchat's birth was driven by a desire to harness the power of AI and cloud services in the modern era. This project utilises Firebase's robust features: Firebase Authentication allows users to seamlessly log in with their Google accounts, while Firestore Database ensures efficient data storage and near-instantaneous synchronisation. This responsiveness keeps the user experience smooth and effectively caters to users' needs.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Furthermore, Superchat integrates with OpenAI's GPT-3.5 Turbo model, empowering users to choose between conversing with real people or interacting with ChatGPT after logging in. This integration allows users to engage in informative chats, posing questions and receiving insightful responses.
 
-## Expanding the ESLint configuration
+[Click here to see deploy version](https://vermillion-bubblegum-078df7.netlify.app/)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tech Stack
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Integrated with OpenAI's GPT-3.5 Turbo model
+- Employed Firebase Authentication & Firestore Database
+- Built with React and TypeScript
+- Styled with Tailwind CSS & Shadcn
+- Deployed on Netlify

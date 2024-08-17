@@ -5,12 +5,12 @@ import { Button } from './ui/button';
 
 const cookies = new Cookies();
 
-const SignIn = () => {
+interface SignInProps {}
+
+const SignIn: React.FC<SignInProps> = ({}) => {
   const signInWithGoogle = async () => {
     try {
       const result = await signInWithPopup(auth, provider);
-      // const result = await signInWithRedirect(auth, provider);
-      // console.log(result);
       cookies.set('auth-token', result);
     } catch (error) {
       console.error(error);

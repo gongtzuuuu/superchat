@@ -1,9 +1,9 @@
-import Cookies from 'universal-cookie';
+// import Cookies from 'universal-cookie';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../config/firebase';
+// import { signInWithEmailAndPassword } from 'firebase/auth';
+// import { auth } from '../config/firebase';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import {
@@ -15,7 +15,7 @@ import {
   FormMessage,
 } from './ui/form';
 
-const cookies = new Cookies();
+// const cookies = new Cookies();
 
 const fieldSchema = z.object({
   email: z.string().email().min(1, { message: 'Email is required' }),
@@ -43,6 +43,7 @@ const SignUp: React.FC<SignInProps> = () => {
 
   const onSubmit = async (data: FieldValueType) => {
     // TODO: Handle sign in with email and password
+    console.log(data);
   };
 
   return (
